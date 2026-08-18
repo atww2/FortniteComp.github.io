@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fortnite Companion — Fortnite Companion</title>
+<meta name="description" content="Fortnite Companion — live Item Shop, interactive maps and competitive events.">
+<link rel="icon" href="favicon.svg">
+<link rel="stylesheet" href="variables.css"><link rel="stylesheet" href="base.css"><link rel="stylesheet" href="components.css"><link rel="stylesheet" href="home.css">
+</head>
+<body data-page="home">
+<div class="app-shell"><aside class="sidebar"><a class="brand" href="index.html">FC</a><nav>
+<a class="nav-link" data-page="home" href="index.html"><span class="nav-icon">⌂</span><span>Home</span></a>
+<a class="nav-link" data-page="shop" href="shop.html"><span class="nav-icon">◫</span><span>Shop</span></a>
+<a class="nav-link" data-page="map" href="map.html"><span class="nav-icon">⌖</span><span>Map</span></a>
+<a class="nav-link" data-page="tournaments" href="tournaments.html"><span class="nav-icon">🏆</span><span>Competitive</span></a>
+<a class="nav-link" data-page="game-info" href="game-info.html"><span class="nav-icon">◈</span><span>Game Info</span></a>
+<a class="nav-link" data-page="settings" href="settings.html"><span class="nav-icon">⚙</span><span>Settings</span></a>
+</nav></aside><div class="page-wrap"><header class="mobile-topbar"><a class="brand-mini" href="index.html">FORTNITE COMPANION</a></header><main class="main"><div class="container"><section class="hero"><div class="eyebrow">Fortnite Companion</div><h1>Всё важное для Fortnite — в одном месте.</h1><p>Живой Item Shop, актуальные карты и competitive-события. Без сервера, базы данных и фейковых данных.</p><div class="hero-actions"><a class="btn primary" href="shop.html">Открыть Item Shop</a><a class="btn" href="map.html">Открыть Map</a><a class="btn" href="tournaments.html">Competitive</a></div></section><section class="stat-grid"><div class="stat"><small>Shop items</small><b id="stat-items">—</b></div><div class="stat"><small>Shop updated</small><b id="stat-updated">—</b></div><div class="stat"><small>Map modes</small><b>3</b></div><div class="stat"><small>Regions</small><b>8</b></div></section><div class="section-head"><h2>Sections</h2></div><section class="quick-grid"><a class="quick-card" href="shop.html"><div class="qicon">◫</div><h3>Item Shop</h3><p>Реальная текущая ротация с изображениями, ценами, редкостью и поиском.</p></a><a class="quick-card" href="map.html"><div class="qicon">⌖</div><h3>Map</h3><p>Battle Royale, Reload и OG с масштабированием, поиском и слоями.</p></a><a class="quick-card" href="tournaments.html"><div class="qicon">🏆</div><h3>Competitive</h3><p>Live и Upcoming события с выбором региона прямо на странице.</p></a><a class="quick-card" href="settings.html"><div class="qicon">⚙</div><h3>Settings</h3><p>Темы, язык, регион и формат времени сохраняются в браузере.</p></a></section></div></main><nav class="mobile-bottomnav">
+<a class="nav-link" data-page="home" href="index.html"><span class="nav-icon">⌂</span><span>Home</span></a>
+<a class="nav-link" data-page="shop" href="shop.html"><span class="nav-icon">◫</span><span>Shop</span></a>
+<a class="nav-link" data-page="map" href="map.html"><span class="nav-icon">⌖</span><span>Map</span></a>
+<a class="nav-link" data-page="tournaments" href="tournaments.html"><span class="nav-icon">🏆</span><span>Comp</span></a>
+<a class="nav-link" data-page="settings" href="settings.html"><span class="nav-icon">⚙</span><span>Settings</span></a>
+</nav></div></div>
+<script type="module">import {initTheme} from './theme.js';import {initNav} from './nav.js';import {init} from './home.js';initTheme();initNav();init();</script>
+</body></html>

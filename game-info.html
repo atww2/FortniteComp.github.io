@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Game Info — Fortnite Companion</title>
+<meta name="description" content="Fortnite Companion — live Item Shop, interactive maps and competitive events.">
+<link rel="icon" href="favicon.svg">
+<link rel="stylesheet" href="variables.css"><link rel="stylesheet" href="base.css"><link rel="stylesheet" href="components.css"><link rel="stylesheet" href="game-info.css">
+</head>
+<body data-page="game-info">
+<div class="app-shell"><aside class="sidebar"><a class="brand" href="index.html">FC</a><nav>
+<a class="nav-link" data-page="home" href="index.html"><span class="nav-icon">⌂</span><span>Home</span></a>
+<a class="nav-link" data-page="shop" href="shop.html"><span class="nav-icon">◫</span><span>Shop</span></a>
+<a class="nav-link" data-page="map" href="map.html"><span class="nav-icon">⌖</span><span>Map</span></a>
+<a class="nav-link" data-page="tournaments" href="tournaments.html"><span class="nav-icon">🏆</span><span>Competitive</span></a>
+<a class="nav-link" data-page="game-info" href="game-info.html"><span class="nav-icon">◈</span><span>Game Info</span></a>
+<a class="nav-link" data-page="settings" href="settings.html"><span class="nav-icon">⚙</span><span>Settings</span></a>
+</nav></aside><div class="page-wrap"><header class="mobile-topbar"><a class="brand-mini" href="index.html">FORTNITE COMPANION</a></header><main class="main"><div class="container"><div class="page-header"><div><div class="eyebrow">About the companion</div><h1>Game Info</h1><p class="subtitle">Информация об источниках и ограничениях статического GitHub Pages frontend.</p></div></div><section class="info-grid"><article class="info-card panel"><h2>Item Shop</h2><p>Используется Osirion Fortnite API, с fallback на Fortnite-API и публичный GitHub Datamining snapshot. Никаких придуманных предметов.</p></article><article class="info-card panel"><h2>Map</h2><p>Для Battle Royale, Reload и OG используется публичный Osirion API. Если API недоступен, сайт показывает ошибку вместо фейковой карты.</p></article><article class="info-card panel"><h2>Competitive</h2><p>События запрашиваются из публичного Osirion API и фильтруются по региону и статусу на клиенте.</p></article><article class="info-card panel"><h2>GitHub Pages</h2><p>Сайт — чистый HTML/CSS/JS. Сервер, Node.js и база данных для работы страницы не нужны.</p></article></section></div></main><nav class="mobile-bottomnav">
+<a class="nav-link" data-page="home" href="index.html"><span class="nav-icon">⌂</span><span>Home</span></a>
+<a class="nav-link" data-page="shop" href="shop.html"><span class="nav-icon">◫</span><span>Shop</span></a>
+<a class="nav-link" data-page="map" href="map.html"><span class="nav-icon">⌖</span><span>Map</span></a>
+<a class="nav-link" data-page="tournaments" href="tournaments.html"><span class="nav-icon">🏆</span><span>Comp</span></a>
+<a class="nav-link" data-page="settings" href="settings.html"><span class="nav-icon">⚙</span><span>Settings</span></a>
+</nav></div></div>
+<script type="module">import {initTheme} from './theme.js';import {initNav} from './nav.js';import {init} from './info.js';initTheme();initNav();init();</script>
+</body></html>

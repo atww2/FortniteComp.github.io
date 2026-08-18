@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Competitive — Fortnite Companion</title>
+<meta name="description" content="Fortnite Companion — live Item Shop, interactive maps and competitive events.">
+<link rel="icon" href="favicon.svg">
+<link rel="stylesheet" href="variables.css"><link rel="stylesheet" href="base.css"><link rel="stylesheet" href="components.css"><link rel="stylesheet" href="competitive.css">
+</head>
+<body data-page="tournaments">
+<div class="app-shell"><aside class="sidebar"><a class="brand" href="index.html">FC</a><nav>
+<a class="nav-link" data-page="home" href="index.html"><span class="nav-icon">⌂</span><span>Home</span></a>
+<a class="nav-link" data-page="shop" href="shop.html"><span class="nav-icon">◫</span><span>Shop</span></a>
+<a class="nav-link" data-page="map" href="map.html"><span class="nav-icon">⌖</span><span>Map</span></a>
+<a class="nav-link" data-page="tournaments" href="tournaments.html"><span class="nav-icon">🏆</span><span>Competitive</span></a>
+<a class="nav-link" data-page="game-info" href="game-info.html"><span class="nav-icon">◈</span><span>Game Info</span></a>
+<a class="nav-link" data-page="settings" href="settings.html"><span class="nav-icon">⚙</span><span>Settings</span></a>
+</nav></aside><div class="page-wrap"><header class="mobile-topbar"><a class="brand-mini" href="index.html">FORTNITE COMPANION</a></header><main class="main"><div class="container"><div class="page-header"><div><div class="eyebrow">Fortnite Competitive</div><h1>Competitive</h1><p class="subtitle">Только реальные Live и Upcoming события. Прошедшие события автоматически исключаются.</p></div><span id="comp-status" class="status">Loading</span></div><div class="competitive-toolbar"><div><div class="eyebrow">Region</div><div class="chip-row" id="regions"></div></div><div><div class="eyebrow">Status</div><div class="chip-row" id="statuses"></div></div></div><div id="event-list" class="event-list"></div></div></main><nav class="mobile-bottomnav">
+<a class="nav-link" data-page="home" href="index.html"><span class="nav-icon">⌂</span><span>Home</span></a>
+<a class="nav-link" data-page="shop" href="shop.html"><span class="nav-icon">◫</span><span>Shop</span></a>
+<a class="nav-link" data-page="map" href="map.html"><span class="nav-icon">⌖</span><span>Map</span></a>
+<a class="nav-link" data-page="tournaments" href="tournaments.html"><span class="nav-icon">🏆</span><span>Comp</span></a>
+<a class="nav-link" data-page="settings" href="settings.html"><span class="nav-icon">⚙</span><span>Settings</span></a>
+</nav></div></div>
+<script type="module">import {initTheme} from './theme.js';import {initNav} from './nav.js';import {init} from './tournaments.js';initTheme();initNav();init();</script>
+</body></html>

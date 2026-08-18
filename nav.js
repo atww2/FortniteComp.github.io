@@ -1,0 +1,1 @@
+export function initNav(){const page=document.body.dataset.page;document.querySelectorAll(".nav-link[data-page]").forEach(x=>{if(x.dataset.page===page){x.classList.add("active");x.setAttribute("aria-current","page")}})}

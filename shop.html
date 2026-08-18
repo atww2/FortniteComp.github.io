@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Item Shop — Fortnite Companion</title>
+<meta name="description" content="Fortnite Companion — live Item Shop, interactive maps and competitive events.">
+<link rel="icon" href="favicon.svg">
+<link rel="stylesheet" href="variables.css"><link rel="stylesheet" href="base.css"><link rel="stylesheet" href="components.css"><link rel="stylesheet" href="shop.css">
+</head>
+<body data-page="shop">
+<div class="app-shell"><aside class="sidebar"><a class="brand" href="index.html">FC</a><nav>
+<a class="nav-link" data-page="home" href="index.html"><span class="nav-icon">⌂</span><span>Home</span></a>
+<a class="nav-link" data-page="shop" href="shop.html"><span class="nav-icon">◫</span><span>Shop</span></a>
+<a class="nav-link" data-page="map" href="map.html"><span class="nav-icon">⌖</span><span>Map</span></a>
+<a class="nav-link" data-page="tournaments" href="tournaments.html"><span class="nav-icon">🏆</span><span>Competitive</span></a>
+<a class="nav-link" data-page="game-info" href="game-info.html"><span class="nav-icon">◈</span><span>Game Info</span></a>
+<a class="nav-link" data-page="settings" href="settings.html"><span class="nav-icon">⚙</span><span>Settings</span></a>
+</nav></aside><div class="page-wrap"><header class="mobile-topbar"><a class="brand-mini" href="index.html">FORTNITE COMPANION</a></header><main class="main"><div class="container"><div class="page-header"><div><div class="eyebrow">Live data</div><h1>Item Shop</h1><p class="subtitle">Текущая ротация Fortnite. Данные берутся из публичных источников автоматически.</p></div><div class="toolbar"><span id="shop-status" class="status">Loading</span><button class="btn small" id="shop-refresh">Обновить</button></div></div><div class="shop-toolbar"><div class="chip-row" id="shop-categories"></div><label class="search-field"><span>⌕</span><input id="shop-search" type="search" placeholder="Поиск предметов..."></label></div><div id="shop-content"></div></div></main><nav class="mobile-bottomnav">
+<a class="nav-link" data-page="home" href="index.html"><span class="nav-icon">⌂</span><span>Home</span></a>
+<a class="nav-link" data-page="shop" href="shop.html"><span class="nav-icon">◫</span><span>Shop</span></a>
+<a class="nav-link" data-page="map" href="map.html"><span class="nav-icon">⌖</span><span>Map</span></a>
+<a class="nav-link" data-page="tournaments" href="tournaments.html"><span class="nav-icon">🏆</span><span>Comp</span></a>
+<a class="nav-link" data-page="settings" href="settings.html"><span class="nav-icon">⚙</span><span>Settings</span></a>
+</nav></div></div>
+<script type="module">import {initTheme} from './theme.js';import {initNav} from './nav.js';import {init} from './shop.js';initTheme();initNav();init();</script>
+</body></html>

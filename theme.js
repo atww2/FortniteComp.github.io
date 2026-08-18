@@ -1,0 +1,1 @@
+import {getSettings,saveSettings} from "./storage.js";export function applyTheme(t){if(t&&t!=="default")document.documentElement.dataset.theme=t;else document.documentElement.removeAttribute("data-theme")}export function initTheme(){applyTheme(getSettings().theme)}

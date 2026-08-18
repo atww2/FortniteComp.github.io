@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Settings — Fortnite Companion</title>
+<meta name="description" content="Fortnite Companion — live Item Shop, interactive maps and competitive events.">
+<link rel="icon" href="favicon.svg">
+<link rel="stylesheet" href="variables.css"><link rel="stylesheet" href="base.css"><link rel="stylesheet" href="components.css"><link rel="stylesheet" href="settings.css">
+</head>
+<body data-page="settings">
+<div class="app-shell"><aside class="sidebar"><a class="brand" href="index.html">FC</a><nav>
+<a class="nav-link" data-page="home" href="index.html"><span class="nav-icon">⌂</span><span>Home</span></a>
+<a class="nav-link" data-page="shop" href="shop.html"><span class="nav-icon">◫</span><span>Shop</span></a>
+<a class="nav-link" data-page="map" href="map.html"><span class="nav-icon">⌖</span><span>Map</span></a>
+<a class="nav-link" data-page="tournaments" href="tournaments.html"><span class="nav-icon">🏆</span><span>Competitive</span></a>
+<a class="nav-link" data-page="game-info" href="game-info.html"><span class="nav-icon">◈</span><span>Game Info</span></a>
+<a class="nav-link" data-page="settings" href="settings.html"><span class="nav-icon">⚙</span><span>Settings</span></a>
+</nav></aside><div class="page-wrap"><header class="mobile-topbar"><a class="brand-mini" href="index.html">FORTNITE COMPANION</a></header><main class="main"><div class="container"><div class="page-header"><div><div class="eyebrow">Preferences</div><h1>Settings</h1><p class="subtitle">Настройки сохраняются в LocalStorage и не требуют аккаунта.</p></div></div><section class="settings-card panel"><div class="settings-row"><div><div class="settings-title">Theme</div><div class="settings-desc">Dark, Dark Green или Dark Red</div></div><div class="theme-picker"><button class="theme-swatch" data-choice="default">Dark</button><button class="theme-swatch" data-choice="green">Dark Green</button><button class="theme-swatch" data-choice="red">Dark Red</button></div></div><div class="settings-row"><div><div class="settings-title">Language</div><div class="settings-desc">Интерфейс и форматирование дат</div></div><select class="select-field" id="settings-language"><option value="ru">Русский</option><option value="en">English</option></select></div><div class="settings-row"><div><div class="settings-title">Region</div><div class="settings-desc">Регион по умолчанию для будущих функций; Competitive имеет собственный фильтр.</div></div><select class="select-field" id="settings-region"><option>EU</option><option>NAC</option><option>NAE</option><option>NAW</option><option>BR</option><option>ASIA</option><option>OCE</option><option>ME</option></select></div><div class="settings-row"><div><div class="settings-title">Time format</div><div class="settings-desc">Формат времени на сайте</div></div><select class="select-field" id="settings-time"><option value="24h">24-hour</option><option value="12h">12-hour</option></select></div></section></div></main><nav class="mobile-bottomnav">
+<a class="nav-link" data-page="home" href="index.html"><span class="nav-icon">⌂</span><span>Home</span></a>
+<a class="nav-link" data-page="shop" href="shop.html"><span class="nav-icon">◫</span><span>Shop</span></a>
+<a class="nav-link" data-page="map" href="map.html"><span class="nav-icon">⌖</span><span>Map</span></a>
+<a class="nav-link" data-page="tournaments" href="tournaments.html"><span class="nav-icon">🏆</span><span>Comp</span></a>
+<a class="nav-link" data-page="settings" href="settings.html"><span class="nav-icon">⚙</span><span>Settings</span></a>
+</nav></div></div>
+<script type="module">import {initTheme} from './theme.js';import {initNav} from './nav.js';import {init} from './settings.js';initTheme();initNav();init();</script>
+</body></html>
